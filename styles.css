@@ -1,0 +1,149 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* General header styles, common across pages */
+header {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Specific header images for each page */
+body.page-sundarbans header {
+    background-image: url('sun1.jpg'); /* Add your header image */
+}
+body.page-srimangal header {
+    background-image: url('sri1.gif'); /* Add your header image */
+}
+body.page-saintmartin header {
+    background-image: url('saint1.jpg'); /* Add your header image */
+}
+body.page-rangamati header {
+    background-image: url('rang2.jpg'); /* Add your header image */
+}
+
+/* Header Styling */
+header {
+    background-image: url('cox1.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.header-content {
+    background: rgba(0, 0, 0, 0.6); /* Transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #007BFF;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left and right content styling */
+.left-content, .right-content {
+    width: 48%;
+    display: flex;
+    flex-direction: column; /* Ensure content flows vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Image styling */
+.left-content img, .right-content img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+.left-content p, .right-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: center; /* Center text for better alignment */
+    max-width: 90%; /* Limit paragraph width for readability */
+}
+
+/* Link styling */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-content, .right-content {
+        width: 100%;
+    }
+}
